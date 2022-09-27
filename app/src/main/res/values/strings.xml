@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="error_loading_data">Error Loading Data</string>
+    <string name="mission_name">Mission Name</string>
+    <string name="rocket_name">Rocket Name</string>
+    <string name="launch_site_name">Launch Site Name</string>
+    <string name="launch_date">Launch Date</string>
+</resources>

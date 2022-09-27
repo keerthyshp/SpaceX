@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/margin_content"
+    android:layout_marginBottom="@dimen/margin_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvMission"
+        android:layout_width="@dimen/recycle_width"
+        android:layout_height="@dimen/content_ht"
+        android:layout_marginTop="@dimen/content_margin_top"
+        android:layout_marginBottom="@dimen/content_margin_bottom"
+        android:layout_marginStart="@dimen/content_margin_start_end"
+        android:layout_marginEnd="@dimen/content_margin_start_end"
+        android:textSize="@dimen/content_text_size"
+        android:gravity="center|start"
+        android:text="@string/mission_name"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPatch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRocket"
+        android:layout_width="@dimen/recycle_width"
+        android:layout_height="@dimen/content_detail_ht"
+        android:layout_marginTop="@dimen/content_detail_top_bottom"
+        android:layout_marginBottom="@dimen/content_detail_top_bottom"
+        android:layout_marginStart="@dimen/content_margin_start_end"
+        android:layout_marginEnd="@dimen/content_margin_start_end"
+        android:textSize="@dimen/content_detail_text_size"
+        android:gravity="center|start"
+        android:text="@string/rocket_name"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPatch"
+        app:layout_constraintTop_toBottomOf="@+id/tvMission" />
+
+    <TextView
+        android:id="@+id/tvLaunchSite"
+        android:layout_width="@dimen/recycle_width"
+        android:layout_height="@dimen/content_detail_ht"
+        android:layout_marginTop="@dimen/content_detail_top_bottom"
+        android:layout_marginBottom="@dimen/content_detail_top_bottom"
+        android:layout_marginStart="@dimen/content_margin_start_end"
+        android:layout_marginEnd="@dimen/content_margin_start_end"
+        android:textSize="@dimen/content_detail_text_size"
+        android:gravity="center|start"
+        android:text="@string/launch_site_name"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPatch"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaunchDate" />
+
+    <TextView
+        android:id="@+id/tvLaunchDate"
+        android:layout_width="@dimen/recycle_width"
+        android:layout_height="@dimen/content_detail_ht"
+        android:layout_marginTop="@dimen/content_detail_top_bottom"
+        android:layout_marginBottom="@dimen/content_detail_top_bottom"
+        android:layout_marginStart="@dimen/content_margin_start_end"
+        android:layout_marginEnd="@dimen/content_margin_start_end"
+        android:textSize="@dimen/content_detail_text_size"
+        android:gravity="center|start"
+        android:text="@string/launch_date"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPatch"
+        app:layout_constraintTop_toBottomOf="@+id/tvRocket" />
+
+    <ImageView
+        android:id="@+id/ivPatch"
+        android:layout_width="@dimen/content_image_width"
+        android:layout_height="@dimen/content_image_ht"
+        android:layout_margin="@dimen/content_image_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
